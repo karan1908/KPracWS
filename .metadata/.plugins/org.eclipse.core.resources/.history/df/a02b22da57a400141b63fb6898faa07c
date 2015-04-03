@@ -1,0 +1,64 @@
+package com.ibm.core.java;
+
+public class MyDeadlock {
+	 
+    String str1 = "Java";
+    String str2 = "UNIX";
+     
+    Thread trd1 = new Thread("My Thread 1"){
+        public void run(){
+        	boolean flag1 = true;
+            while(flag1){
+                synchronized(str1){
+                	try {
+						Thread.sleep(10);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+                	System.out.println("Deadlock in Thread 1");
+                    synchronized(str2){
+                        System.out.println(str1 + str2);
+                    }
+                }
+                flag1 = false;
+            }//while
+            System.out.println("Thread 1 execution completed!");
+        }
+    };
+     
+    Thread trd2 = new Thread("My Thread 2"){
+        public void run(){
+        	boolean flag2 = true;
+            while(flag2){
+                synchronized(str2){
+                	try {
+						Thread.sleep(10);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+                	System.out.println("Deadlock in Thread 2");
+                    synchronized(str1){
+                        System.out.println(str2 + str1);
+                        try {
+							Thread.sleep(2000);
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+                    }//synchronized str1
+                }//synchronized str2
+                flag2 = false;
+                System.out.println("Thread 2 execution completed!");
+            }//while
+        }//run
+    };
+     
+    public static void main(String a[]){
+        MyDeadlock mdl = new MyDeadlock();
+        mdl.trd1.start();
+        mdl.trd2.start();
+        System.out.println("Finish!");
+    }
+}

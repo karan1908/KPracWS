@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Adder.java&apos; to &apos;RMIClient/src/com.ibm.rmi&apos;&#x0D;&#x0A;- Original project: &apos;RMIServer&apos;&#x0D;&#x0A;- Destination element: &apos;RMIClient/src/com.ibm.rmi&apos;&#x0D;&#x0A;- Original element: &apos;com.ibm.rmi.Adder.java&apos;" description="Copy compilation unit" destination="=RMIClient/src&lt;com.ibm.rmi" element1="/src&lt;com.ibm.rmi{Adder.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1410693015239" units="1" version="1.0"/>
+</session>

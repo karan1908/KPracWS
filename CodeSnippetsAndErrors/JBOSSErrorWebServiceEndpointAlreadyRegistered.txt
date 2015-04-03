@@ -1,0 +1,83 @@
+http://192.168.21.55:8080/JAXWSWebAppIntegration/karan
+
+
+Caused by: java.lang.IllegalArgumentException: JBAS015533: Web Service endpoint com.sun.xml.ws.tx.webservice.member.coord.ActivationRequesterPortTypeImpl with URL pattern /Coordinator is already registered. Web service endpoint com.sun.xml.ws.tx.webservice.member.coord.RegistrationRequesterPortTypeImpl is requesting the same URL pattern.
+          at org.jboss.as.webservices.metadata.model.AbstractDeployment.addEndpoint(AbstractDeployment.java:60)
+          at org.jboss.as.webservices.metadata.model.JAXWSDeployment.addEndpoint(JAXWSDeployment.java:27)
+          at org.jboss.as.webservices.deployers.WSIntegrationProcessorJAXWS_POJO.processAnnotation(WSIntegrationProcessorJAXWS_POJO.java:94)
+          at org.jboss.as.webservices.deployers.AbstractIntegrationProcessorJAXWS.deploy(AbstractIntegrationProcessorJAXWS.java:87)
+          at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.0.Final.jar:7.1.0.Final]
+          ... 5 more
+		  
+		  
+		  
+Re: Web Service endpoint already registered.
+ NIranjan Nanda
+Apprentice
+NIranjan Nanda Oct 24, 2012 3:18 AM (in response to Antonio Bruno)
+This is happening because JBoss 7.1 already starts a web service service. Open $JBOSS_HOME/standalone/configuration/standalone.xml and look for below blocks/lines and comment those:
+ 
+<extension module="org.jboss.as.webservices"/>
+ 
+<subsystem xmlns="urn:jboss:domain:webservices:1.1">
+            <modify-wsdl-address>true</modify-wsdl-address>
+            <wsdl-host>${jboss.bind.address:127.0.0.1}</wsdl-host>
+            <endpoint-config name="Standard-Endpoint-Config"/>
+            <endpoint-config name="Recording-Endpoint-Config">
+                <pre-handler-chain name="recording-handlers" protocol-bindings="##SOAP11_HTTP ##SOAP11_HTTP_MTOM ##SOAP12_HTTP ##SOAP12_HTTP_MTOM">
+                    <handler name="RecordingHandler" class="org.jboss.ws.common.invocation.RecordingServerHandler"/>
+                </pre-handler-chain>
+            </endpoint-config>
+        </subsystem>
+ 
+ 
+Your app should deploy now.
+ 
+Although JBoss 7.1 is modular, but its embracing to JAX-WS really frustrates. I am still pondering why JBoss 7.1 includes a JAX-WS service and starts it. It just restricts developers to use their own flavor of technology stack.
+ 
+Thanks,
+Niranjan
+
+
+
+
+		  
+
+
+
+
+
+
+
+
+Hi all,
+
+I found out that the error is present because Jboss already deploys its own pool of webservices.
+I partially solved my problem just commenting out the section:
+<subsystem xmlns="urn:jboss:domain:webservices:1.1">
+
+            <modify-wsdl-address>true</modify-wsdl-address>
+
+            <wsdl-host>${jboss.bind.address:127.0.0.1}</wsdl-host>
+
+            <endpoint-config name="Standard-Endpoint-Config"/>
+
+            <endpoint-config name="Recording-Endpoint-Config">
+
+                <pre-handler-chain name="recording-handlers" protocol-bindings="##SOAP11_HTTP ##SOAP11_HTTP_MTOM ##SOAP12_HTTP ##SOAP12_HTTP_MTOM">
+
+                    <handler name="RecordingHandler" class="org.jboss.ws.common.invocation.RecordingServerHandler"/>
+
+                </pre-handler-chain>
+
+            </endpoint-config>
+
+        </subsystem>
+present in file /standalone/configuration/standalone.xml
+
+Hope this info could help :)
+
+Best Regards
+Silvano
+
+

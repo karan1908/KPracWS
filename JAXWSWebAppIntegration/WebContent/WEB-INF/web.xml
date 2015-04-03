@@ -1,0 +1,38 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
+ 
+<!-- http://localhost:8080/JAXWSWebAppIntegration/helloweb 
+     https://docs.jboss.org/author/display/AS71/SSL+setup+guide
+     https://localhost:8443/JAXWSWebAppIntegration/helloweb     
+     --> 
+     
+<!-- Configure keystore/https/enable certificate on JBOSS 7
+1. Generate keystore from keystore utility at jdk\bin keytool -genkey -alias mykey -keyalg RSA
+2. Update JBOS 7 standalone.xml  file add block
+<connector name="https" protocol="HTTP/1.1" scheme="https" socket-binding="https" secure="true">
+ <ssl name="tomcat-ssl" key-alias="tomcat" password="qwerty12" 
+ certificate-key-file="D:\jboss-as-7.1.1.Final\jbossKeystore.keystore" protocol="TLSv1"/>
+ </connector>-->      
+ 
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+ 
+	<listener>
+		<listener-class>
+			com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+                </listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>helloweb</servlet-name>
+		<servlet-class>
+			com.sun.xml.ws.transport.http.servlet.WSServlet
+                </servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>helloweb</servlet-name>
+		<url-pattern>/helloweb</url-pattern>
+	</servlet-mapping>
+ 
+</web-app>

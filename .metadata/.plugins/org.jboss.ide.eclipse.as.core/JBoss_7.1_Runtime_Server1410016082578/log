@@ -1,0 +1,319 @@
+!SESSION 2014-09-06 20:35:28.784 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-06 20:46:16.035
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-06 20:46:34.235
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-06 20:47:21.540
+!MESSAGE Module SpringHibernateApp published without error.
+
+!ENTRY unknown 0 0 2014-09-06 20:52:43.994
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-09-06 20:52:47.951
+!MESSAGE Server processes have been terminated.
+!SESSION 2014-09-07 06:02:42.676 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-07 06:24:15.185
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-07 06:24:40.582
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 06:30:40.974
+!MESSAGE Module RESTfulExample published without error.
+!SESSION 2014-09-07 12:55:11.370 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 13:04:49.732
+!MESSAGE 1 files modified in module RESTfulExample
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-07 13:04:55.688
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-07 13:05:20.768
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 13:05:22.635
+!MESSAGE 4 files modified in module RESTfulExample
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-09-07 13:06:22.387
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 13:07:56.954
+!MESSAGE 4 files modified in module RESTfulExample
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-07 13:07:57.958
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-07 13:08:03.815
+!MESSAGE Server Startup Succeeded
+
+!ENTRY unknown 0 0 2014-09-07 13:08:37.949
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 13:08:59.066
+!MESSAGE Module RESTfulExample published without error.
+
+!ENTRY unknown 0 0 2014-09-07 13:10:47.226
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-07 13:11:28.336
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-09-07 13:11:28.885
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-07 13:16:34.329
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-07 13:16:40.092
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 13:16:51.480
+!MESSAGE Module RESTfulExample published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 13:21:57.339
+!MESSAGE 2 files modified in module RESTfulExample
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 13:22:04.065
+!MESSAGE 2 files modified in module RESTfulExample
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 13:27:02.518
+!MESSAGE 1 files modified in module RESTfulExample
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 13:27:06.524
+!MESSAGE 2 files modified in module RESTfulExample
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 13:31:42.149
+!MESSAGE 1 files modified in module RESTfulExample
+
+!ENTRY unknown 0 0 2014-09-07 13:36:05.835
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298242 2014-09-07 13:36:15.074
+!MESSAGE Full publish failed for module MavenREST
+!SUBENTRY 1 org.eclipse.wst.server.core 4 1644298251 2014-09-07 13:36:15.074
+!MESSAGE Error reading file E:\KPracWS\MavenREST\target\classes\com\mkyong\rest\HelloWorldService.class
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-09-07 13:37:14.183
+!MESSAGE Server processes have been terminated.
+
+!ENTRY unknown 0 0 2014-09-07 14:35:07.017
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-07 14:35:08.032
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-07 14:35:14.011
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 14:57:36.631
+!MESSAGE Module MavenRESTWS published without error.
+
+!ENTRY unknown 0 0 2014-09-07 14:57:56.973
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 14:59:17.011
+!MESSAGE Module MavenRESTWS published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 15:00:49.575
+!MESSAGE 7 files modified in module MavenRESTWS
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 15:00:57.436
+!MESSAGE 4 files modified in module MavenRESTWS
+
+!ENTRY unknown 0 0 2014-09-07 15:01:06.609
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-07 15:01:14.394
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-09-07 15:01:14.749
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-09-07 15:01:19.755
+!MESSAGE Error occurred while checking module state for MavenRESTWS on server JBoss 7.1 Runtime Server
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://localhost:9999. The connection timed out
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.execute(AS71Manager.java:336)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.getDeploymentNames(AS71Manager.java:389)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.hasDeployment(AS71Manager.java:383)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.getDeploymentStateSafe(AS71Manager.java:207)
+	at org.jboss.ide.eclipse.as.internal.management.as71.JBoss71ManagerService.getDeploymentState(JBoss71ManagerService.java:132)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.getDeploymentState(JBoss7ManagerServiceProxy.java:67)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.getRootModuleState(JBoss7ModuleStateVerifier.java:95)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.getRootModuleState(JBoss7ModuleStateVerifier.java:82)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.getModuleState(JBoss7ModuleStateVerifier.java:66)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.runWait(UpdateModuleStateJob.java:80)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.run(UpdateModuleStateJob.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://localhost:9999. The connection timed out
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:129)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:71)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.execute(AS71Manager.java:325)
+	... 11 more
+Caused by: java.net.ConnectException: JBAS012144: Could not connect to remote://localhost:9999. The connection timed out
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:131)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:176)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:144)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:115)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:236)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:141)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:127)
+	... 13 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-07 15:47:23.735
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-07 15:47:30.007
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 16:41:03.943
+!MESSAGE Module MavenRestFirst published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-07 16:43:10.587
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-09-07 16:43:11.067
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-07 16:43:12.032
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-09-07 16:43:16.558
+!MESSAGE Server processes have been terminated.
+
+!ENTRY unknown 0 0 2014-09-07 16:45:56.156
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-07 16:45:57.169
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-07 16:46:03.019
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 16:46:14.476
+!MESSAGE Module MavenRestFirst published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 16:52:58.899
+!MESSAGE Module MavenRestEx published without error.
+
+!ENTRY unknown 0 0 2014-09-07 16:53:16.694
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-09-07 16:53:50.822
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 17:07:56.732
+!MESSAGE Module MavenRestEx published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-09-07 17:15:28.541
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-07 17:28:06.907
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-07 17:28:20.487
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 17:51:23.088
+!MESSAGE 3 files modified in module MavenRestEx
+
+!ENTRY unknown 0 0 2014-09-07 17:51:36.787
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-07 17:52:32.596
+!MESSAGE Module MavenRestEx published without error.
+!SESSION 2014-09-07 20:25:09.829 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-07 20:27:46.828
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-07 20:27:59.534
+!MESSAGE Server Startup Succeeded
+!SESSION 2014-12-28 19:19:18.409 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-12-28 20:29:07.333
+!MESSAGE Module MavenWebApp published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-12-28 20:29:10.658
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-12-28 20:29:38.437
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-12-28 20:29:39.106
+!MESSAGE Module MavenWebApp on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY unknown 0 0 2014-12-28 20:30:20.222
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-12-28 20:30:57.611
+!MESSAGE 2 files modified in module MavenWebApp
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-12-28 20:34:44.242
+!MESSAGE 3 files modified in module MavenWebApp
+
+!ENTRY unknown 0 0 2014-12-28 20:45:14.390
+!MESSAGE OK
+!SESSION 2015-02-16 22:08:54.129 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-02-16 22:34:45.047
+!MESSAGE Module EJBComponent published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-02-16 22:34:49.350
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-02-16 22:35:10.104
+!MESSAGE Server Startup Succeeded
+
+!ENTRY unknown 0 0 2015-02-16 22:36:52.069
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2015-02-16 22:36:53.318
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-02-16 22:36:53.884
+!MESSAGE Server processes have been terminated.

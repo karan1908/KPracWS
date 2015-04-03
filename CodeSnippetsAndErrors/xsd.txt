@@ -1,0 +1,11 @@
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+- <soapenv:Body>
+- <soapenv:Fault>
+  <faultcode xmlns:ns1="http://xml.apache.org/axis/">ns1:Server.NoService</faultcode> 
+  <faultstring>The AXIS engine could not find a target service to invoke! targetService is HelloWorld</faultstring> 
+- <detail>
+  <ns2:hostname xmlns:ns2="http://xml.apache.org/axis/">DWUS2B065B</ns2:hostname> 
+  </detail>
+  </soapenv:Fault>
+  </soapenv:Body>
+  </soapenv:Envelope>

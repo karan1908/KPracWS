@@ -1,0 +1,6 @@
+package com.ibm.soap.server;
+
+public class HelloWorld {
+
+	
+}

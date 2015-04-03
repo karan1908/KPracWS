@@ -1,0 +1,27 @@
+INDEX VERSION 1.126
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\476320523.index
+\MavenRESTExample\src\main\resources
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\496974445.index
+\com.rest.ex\src\main\resources
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\798401609.index
+\SpringHibernateApp\src
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2779229780.index
+\RESTfulExample\src\main\resources
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\541009774.index
+\SpringHibernateApp\src
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2613082139.index
+\MavenRestFirst\src\main\resources
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1069956554.index
+\MavenRestEx\src\main\resources
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\606613366.index
+\MavenRESTWS\src\main\resources
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2343391388.index
+\MavenWebApp\src\main\resources
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\447048349.index
+\EJBClientWeb\src
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1002637209.index
+\SoapWSApacheAxisClient\src
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2505348057.index
+\SOAPWebServiceServerClient\src
+E:\KPracWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1672311863.index
+\ContactsMgmt\src

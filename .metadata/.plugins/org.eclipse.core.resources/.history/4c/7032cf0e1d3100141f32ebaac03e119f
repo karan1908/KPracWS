@@ -1,0 +1,17 @@
+package com.ibm.soap.server;
+
+public class HelloWorld 
+{
+	
+	public int retInt()
+	{
+		return 1;
+		
+	}
+
+    public String sayHelloWorld(String name)
+    {
+        return "Hello world from "+ name;
+    }
+
+}

@@ -1,0 +1,11 @@
+
+http://stackoverflow.com/questions/6452537/servlet-send-response-to-jsp
+
+request.setAttribute("message", message);
+        request.getRequestDispatcher("/login.jsp").forward(request, response);                                           
+
+<c:if test="${not empty message}">
+    <h1>${message}</h1>
+</c:if>
+
+

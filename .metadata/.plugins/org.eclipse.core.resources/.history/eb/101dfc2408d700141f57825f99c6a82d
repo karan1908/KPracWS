@@ -1,0 +1,45 @@
+package com.ibm.core.java;
+
+import java.io.IOException;
+
+public class LateBindingOverloading {
+	
+	public void method(String x) throws Exception
+	{
+		try{
+		System.out.println("In Parent method");
+		}
+		finally
+		{
+			throw new Exception();
+		}
+	
+	}
+	
+	public static void main(String[] args) throws Exception
+	{
+		LateBindingOverloading child = new Child();
+		try {
+			child.method(2);
+		} 
+		
+		catch (Exception e) {
+			System.out.println("In main catch");
+			throw new Exception();
+		}
+		
+		
+	}
+
+}
+
+class Child extends LateBindingOverloading{
+	
+	public void method(Object x)
+	{
+		
+		System.out.println("In Child method");
+	
+	}
+	
+}

@@ -1,0 +1,17 @@
+package com.ibm.soap.server;
+
+public class HelloWorld 
+{
+
+	
+	public String toStringa(String name) 
+	{
+		return  "Hello world from "+ name;  
+	}
+
+
+	
+	
+	
+	
+}

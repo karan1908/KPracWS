@@ -1,0 +1,139 @@
+package com.ibm.core.java;
+
+public class KHashMap<K,V> {
+
+	// for simplicity size is taken as 2^4
+    private static final int SIZE = 16;
+    private Entry buckets[] = new Entry[SIZE];
+ 
+    /**
+     * User defined simple Map data structure
+     * with key and value.
+     * This is also used as linked list in case multiple
+     * key-value pairs lead to the same bucket with same
+     * hashcodes and different keys (collisions) using
+     * pointer 'next'.
+     *
+     * @author karan
+     */
+    class Entry<K,V> {
+        final K key;
+        V value;
+        Entry next;
+ 
+        Entry(K k,V v) {
+            key = k;
+            value = v;
+        }
+ 
+        public V getValue() {
+            return value;
+        }
+ 
+        public void setValue(V value) {
+            this.value = value;
+        }
+ 
+        public K getKey() {
+            return key;
+        }
+    }
+ 
+    /**
+     * Returns the entry associated with the specified key in the
+     * HashMap.  Returns null if the HashMap contains no mapping
+     * for the key.
+     */
+    public Entry get(K k) {
+        int hash = k.hashCode() % SIZE;
+        Entry e = buckets[hash];
+ 
+        // if bucket is found then traverse through the linked list and
+        // see if element is present
+        while(e != null) {
+            if(e.key.equals(k)) {
+                return e;
+            }
+            e = e.next;
+        }
+        return null;
+    }
+ 
+    /**
+     * Associates the specified value with the specified key in this map.
+     * If the map previously contained a mapping for the key, the old
+     * value is replaced.
+     */
+    public void put(K k,V v) {
+        int hash = k.hashCode() % SIZE;
+        System.out.println("hashcode "+hash);
+        Entry e = buckets[hash];
+        
+        if(e != null) {
+            // it means we are trying to insert duplicate
+            // key-value pair, hence overwrite the current
+            // pair with the old pair
+            if(e.key.equals(k)) {
+                e.value = v;
+            } else {
+                // traverse to the end of the list and insert new element 
+                // in the same bucket
+                while(e.next != null) {
+                    e = e.next;
+                }
+                Entry entryInOldBucket = new Entry(k, v);
+                e.next = entryInOldBucket;
+            }
+        } else {
+            // new element in the map, hence creating new bucket
+            Entry entryInNewBucket = new Entry(k, v);
+            buckets[hash] = entryInNewBucket;
+        }
+    }
+    
+    public int getSize()
+    {
+    	int count = 0;
+    	
+    	for(Entry e:buckets)
+    	{
+    		++count;
+    		
+    		while(e.next != null)
+    		{
+    			++count;
+    			e = e.next;
+    		}	
+    		
+    	}
+    	
+    	return count;
+    }
+    
+ 
+    // for testing our own map
+    public static void main(String[] args) {
+        KHashMap<String,String> khm = new KHashMap<String,String>();
+ 
+        khm.put("Karan", "SMTS");
+        khm.put("Ananth", "SSE");
+        khm.put("Karan", "SMTS1");
+        khm.put("Chandu", "SSE");
+        
+        for(int i=0;i<99;i++)
+        {
+        	khm.put("key"+i,"value"+i);
+        }
+        
+        KHashMap.Entry e = khm.get("Karan");
+        String result = e!=null?""+e.getValue():"Not Found!";
+        System.out.println(result);
+        
+        e = khm.get("key4");
+        result = e!=null?""+e.getValue():"Not Found!";
+        System.out.println(result);
+        
+        System.out.println("Total elements "+khm.getSize());
+    }
+    
+}

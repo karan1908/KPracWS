@@ -1,0 +1,45 @@
+package com.ibm.core.java;
+
+import java.io.*;
+
+
+/*
+ * There are many rules if we talk about methodoverriding with exception handling. The Rules are as follows:
+If the superclass method does not declare an exception
+If the superclass method does not declare an exception, subclass overridden method cannot declare the 
+checked exception ((extended by Exception Class)) 
+but it can declare 
+unchecked exception (extended by RuntimeException Class).
+If the superclass method declares an exception
+If the superclass method declares an exception, subclass overridden method can declare same, subclass exception or no exception 
+but cannot declare parent exception.
+ * */
+
+/* Moreover in case of static method overriding does'nt takes place
+ * always the parent method get called
+*/
+
+  
+class Parent {  
+	public static void msg()  throws RuntimeException        //throws Exception
+	{System.out.println("parent");}  
+}  
+
+class ExceptionRulesMethodOverride extends Parent{  
+	public static void msg()  throws NullPointerException
+	{  
+		System.out.println("TestExceptionChild");  
+	}  
+
+	public static void main(String args[]){  
+		Parent p=new ExceptionRulesMethodOverride();  
+		
+		try {
+			p.msg();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  
+	}  
+
+}  

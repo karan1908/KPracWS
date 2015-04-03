@@ -1,0 +1,12 @@
+package com.ibm.soap.server;
+
+public class HelloWorld {
+
+	public String sayHelloWorld(String name)
+	    {
+	        
+	
+	String abc;
+	return "Hello world from ";
+	    }
+}
