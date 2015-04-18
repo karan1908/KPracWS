@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="para" key="selection"/>
+		<item value="checkRoman" key="selection"/>
 		<list key="findhistory">
-			<item value="para"/>
-			<item value="conv"/>
-			<item value="conversation"/>
-			<item value="inputLine"/>
-			<item value="conversationLine"/>
-			<item value="ConversationLine"/>
-			<item value="paragraph"/>
-			<item value="&lt;/br&gt;"/>
+			<item value="checkRoman"/>
+			<item value="lastNumber"/>
+			<item value="getValueFromRomanChar"/>
+			<item value="linefilter"/>
+			<item value="LineFilter"/>
+			<item value="cvalues"/>
+			<item value="Stack"/>
+			<item value="stack"/>
 		</list>
 		<list key="replacehistory">
 			<item value="input"/>
